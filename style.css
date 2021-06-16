@@ -1,0 +1,36 @@
+h1{
+    color: black;
+    font-size: 200px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+h1:hover,
+img:hover,
+.fab:hover {
+    color: white;
+}
+
+.name{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.icons {
+    position: fixed;
+    bottom: 70%;
+    right: 1%;
+}
+
+a {
+    color: black;
+}
