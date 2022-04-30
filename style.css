@@ -1,46 +1,101 @@
-h1{
-    color: black;
-    font-size: 200px;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    display:inline
+    background-color: var(--main-color) ;
+}
+:root{
+    --main-color: #DEB887;
+
 }
 
-h1:hover,
-img:hover,
-.fab:hover,
-.flex-container:hover {
+.flex-container h1 a{
+ font-size: 6rem;
+ padding: 0px;
+ color: black;
+ 
+}
+.flex-container h1 a:hover{
     color: white;
+    transform: scale(1.1);
+    transition: .2s ease-in;
 }
 
+.flex-container{
+    margin: 0px;
+
+}
 .name{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 40px;
-    position: fixed;
-    right: 50px;
-    bottom: 10px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+.fab img{
+    width: 50px;
+    
+}
+.fab{
+   font-size: 3rem;
+   color: black;
+}
+.fab:hover{
+    color: white;
+    transition: .15s ease-in;
 }
 
-body{
-    background-color: burlywood;
-}
-
-.icons {
-    position: fixed;
-    bottom: 70%;
-    right: 1%;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.flex-container {
+.icons{
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    left: 0px;
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    width: 47%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
 }
+.icons i{
+   font-size: 4rem;
+}
+.name{
+    position: relative;
+    text-align: center;
+    margin: 30% 0px;
+}
+
+@media only screen and (min-width:800px){
+    .flex-container h1 a{
+        font-size: 7rem;
+        padding: 0px;
+        color: black;
+    }
+    .icons{
+        position: relative;
+        top: 0rem;
+        right: 0rem;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .icons i{
+       font-size: 4rem;
+    }
+    .name{
+        position: relative;
+        text-align: center;
+        margin: 10% 0px;
+    }
+
+}
+@media only screen and (min-width:1200px){
+    .flex-container h1 a{
+        font-size: 12rem;
+        padding: 0px;
+        color: black;
+        
+    }
+... (38 lines left)
