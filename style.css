@@ -98,4 +98,41 @@
         color: black;
         
     }
-... (38 lines left)
+    .flex-container h1 span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        background-color: rgb(255, 255, 255);
+        animation: text_reveal_box 1s ease;
+        animation-delay: .3s;
+        z-index: 999;
+    }
+   
+    .name{
+        position: absolute;
+       margin: 0px;
+        font-size: 2rem;
+    }
+    .icons{
+        position: absolute;
+        margin: 0;
+        display: inline-block;
+        top: 5rem;
+        right: 2rem;
+        left: auto;
+        
+        
+    }
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+ }
